@@ -1,0 +1,100 @@
+table {
+  width: 800px;
+}
+
+.сell {
+  width: 200px;
+  height: 40px;
+}
+
+tr:nth-child(1) {
+  background-color: #038f8f;
+  color: #fff;
+}
+
+tr:nth-child(2) {
+  background-color: #f5f503;
+  color: #000;
+}
+
+tr:nth-child(1):hover {
+  background-color: #f5f503;
+  color: #000;
+}
+
+tr:nth-child(2):hover {
+  background-color: #038f8f;
+  color: #fff;
+}
+
+.drawings {
+  margin-top: 20px;
+  margin-left: 100px;
+  gap: 15px;
+}
+
+.picturePosition {
+  width: 70px;
+  height: 70px;
+  background-color: #85c8d9;
+  position: relative;
+  rotate: 45deg;
+  border-radius: 15%;
+  border: 2px solid black;
+}
+
+.picturePosition:before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background-color: #e3f541;
+  position: absolute;
+  rotate: -35deg;
+  border-radius: 15%;
+  border: 2px solid black;
+  top: 83px;
+  left: 23px;
+}
+
+.picturePosition:after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background-color: #d1445e;
+  position: absolute;
+  rotate: 215deg;
+  border-radius: 15%;
+  border: 2px solid black;
+  top: 21px;
+  left: 83px;
+}
+
+.pictureTransform {
+  width: 70px;
+  height: 70px;
+  background-color: #85c8d9;
+  border-radius: 15%;
+  border: 2px solid black;
+  transform: rotate(45deg) translate(100px, -220px);
+  margin: 10px;
+}
+
+.pictureTransform:before,
+.pictureTransform:after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 15%;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+.pictureTransform:before {
+  background-color: #e3f541;
+  transform: rotate(-35deg) translate(-28px, 81.5px);
+}
+
+.pictureTransform:after {
+  background-color: #d1445e;
+  transform: rotate(215deg) translate(-35px, 96px);
+}
